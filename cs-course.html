@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <!-- wet-boew.github.io/wet-boew/License-en.html /
+	wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Accessible Customer Service Module
+    </title>
+    <meta name="keywords" content="">
+    <meta name="description"
+        content="The Accessibility for Manitobans Act became law on December 5, 2013.  The purpose of the legislation is to provide a clear and proactive process for the identification, prevention and removal of barriers that prevent a significant portion of the population from full participation. ">
+    <meta property="og:title" content="The Accessibility for Manitobans Act">
+    <meta property="og:url" content="http://www.accessibilitymb.ca">
+    <meta property="og:site_name" content="The Accessibility for Manitobans Act">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:description"
+        content="The Accessibility for Manitobans Act became law on December 5, 2013.  The purpose of the legislation is to provide a clear and proactive process for the identification, prevention and removal of barriers that prevent a significant portion of the population from full participation.">
+    <!--[if gte IE 9 | !IE ]><!-->
+
+    <link href="./assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/theme.css">
+    <link rel="stylesheet" href="./css/custom-dio.css">
+    <link rel="stylesheet" href="./css/custom-dio-media-queries.css">
+    <link rel="stylesheet" href="./css/jplayer.css">
+
+    <!--<![endif]-->
+    <!--[if lt IE 9]> <link href="../theme-wet-boew/assets/favicon.ico"
+	rel="shortcut icon" /> <link rel="stylesheet"
+	href="../theme-wet-boew/css/ie8-theme.min.css" /> <script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../wet-boew/js/ie8-wet-boew.min.js"></script> <![endif]-->
+    <noscript>
+        <link rel="stylesheet" href="./css/noscript.min.css" />You need to enable JavaScript to run this app.
+    </noscript>
+</head>
+
+<body vocab="http://schema.org/" typeof="WebPage">
+    <nav aria-label="Skip menu">
+        <ul id="wb-tphp">
+            <li class="wb-slc">
+                <a class="wb-sl" href="#main-cont">Skip to main content</a>
+            </li>
+            <li class="wb-slc visible-sm visible-md visible-lg">
+                <a class="wb-sl" href="#wb-info">Skip to footer menu</a>
+            </li>
+        </ul>
+    </nav>
+    <header role="banner">
+        <nav role="navigation" id="wb-sm" data-ajax-replace="" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg"
+            typeof="SiteNavigationElement">
+            <div class="container nvbar">
+                <h2>Topics menu</h2>
+                <div class="row"></div>
+            </div>
+        </nav>
+        <div id="wb-bnr">
+            <div id="wb-bar">
+                <div class="container">
+                    <div class="row">
+                        <a id="buffylogo" href="https://www.gov.mb.ca/index.html" target="_blank"><img
+                                src="./img/logos/buffylogo.jpg" alt="Manitoba . c a"></a>
+                        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+                            <h2>Menus</h2>
+                            <ul class="pnl-btn list-inline text-right">
+                                <li><a href="#mb-pnl" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default"
+                                        role="button"><span class="glyphicon glyphicon-search"><span
+                                                class="glyphicon glyphicon-th-list"><span
+                                                    class="wb-inv">Menu</span></span></span></a></li>
+                            </ul>
+                            <div id="mb-pnl"></div>
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container green">
+            <div class="row">
+                <div class="course-header">
+                    <div class="">
+                        <h2>Accessible Customer Service Module</h2>
+                    </div>
+
+                    <div class="screenReader" tabindex="0"
+                        aria-label="Audio narration controls. Press tab or down arrows to navigate to the buttons."
+                        role="region">
+                        <div id="jPlayerForReader"><audio id="jp_audio_0" preload="metadata"></audio></div>
+                        <div class="controls">
+                            <div class="sr-header">Listen</div>
+
+                            <a href="#" id="backwardsListener" role="button"><i class="fa fa-backward"></i>
+                                <span class="ablty">Back</span>
+
+                            </a>
+                            <a href="./audio/mao_acs_1.1.mp3" id="playListener" role="button">
+                                <div id="playButton"><i id="playicon" class="fa fa-play-circle-o"></i>
+                                    <span class="ablty">Play</span>
+                                </div>
+                            </a>
+                            <a href="#" id="pauseListener" style="display: none;" role="button">
+                                <div id="pauseButton"><i class="fa fa-pause"></i><span class="ablty">Pause</span></div>
+                            </a>
+                            <a style="display: none" href="#" id="stopListener" role="button">
+                                <div id="stopButton"><span class="ablty">Stop</span></div>
+                            </a>
+                            <a href="#" id="forwardListener" role="button">
+                                <div id="forwardsButton"><i class="fa fa-forward"></i><span class="ablty">Forward</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="progress-time">
+                            <span id="currentTime">00:00</span>
+                            <span class="progressBar" title="Audio progress bar"><span id="RMProgress" class="progress"
+                                    style="width: 0%;"></span><span class="ablty"></span></span>
+                            <span id="duration" aria-label="Duration">00:36</span><a href="#" id="muteListener"
+                                role="button">
+                                <div id="muteButton"><i class="fa fa-volume-up"></i><span class="ablty">Mute</span>
+                                </div>
+                            </a><a href="#" id="unmuteListener" style="display: none;" role="button">
+                                <div id="unmuteButton"><i class="fa fa-volume-off"></i><span class="ablty">Unmute</span>
+                                </div>
+                            </a>
+                        </div>
+                        <span class="audio-text visible-lg visible-md" id="audio-instruction" aria-label="Note">Audio
+                            narration. Select the
+                            play button (link)
+                            to listen.</span>
+                    </div>
+                    <nav>
+
+                        <ul class="course-top-menu">
+                            <li> <a href="#right-panel" id="glossary-menu-button" aria-controls="right-panel"
+                                    class="overlay-lnk" role="button">Glossary</a></li>
+                            <li><a href="./index.html" id="home-menu-button" role="button">Home</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="" property="mainContentOfPage" class="cs-page">
+        <section id="init-content"></section>
+        <div class="container" id="main">
+            <section id="right-panel" class="wb-overlay modal-content overlay-def wb-panel-r">
+                <header class="modal-header" role="none">
+                    <h2 class="modal-title" tabindex="-1" id="glossary-heading">Glossary Terms
+                    </h2>
+                </header>
+                <div class="modal-body">
+                    <section id="glossary-container"></section>
+                </div>
+            </section>
+        </div>
+        <section id="wb-sec" class="visible-sm visible-md visible-lg wb-navcurr">
+        </section>
+    </main>
+    <footer id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+        <div class="container">
+            <nav class="row" aria-label="Footer menu">
+                <h2 class="hidden">Footer menu</h2>
+                <ul class="footer-nav">
+                    <li>
+                        <a href="https://www.gov.mb.ca/accessibility/index.html" target="_blank">Accessibility</a>
+                    </li>
+                    <li>
+                        <a href="http://lamformationmb.ca/cs-course.html" target="_self">Français</a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.gov.mb.ca/legal/disclaimer.html" target="_blank">Disclaimer</a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.gov.mb.ca/legal/copyright.html" target="_blank">Copyright</a>
+                    </li>
+                    <li class="nomar">
+                        <a href="https://www.gov.mb.ca/legal/privacy.html" target="_blank">Privacy</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js"
+        integrity="sha512-g0etrk7svX8WYBp+ZDIqeenmkxQSXjRDTr08ie37rVFc99iXFGxmD0/SCt3kZ6sDNmr8sR0ISHkSAc/M8rQBqg=="
+        crossorigin="anonymous"></script>
+    <script src="wet-boew/js/wet-boew.min.js"></script>
+    <script src="js/jPlayerForReader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ally.js/1.1.0-beta.5/ally.min.js"></script>
+    <script src="js/custom-dio.js"></script>
+
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+		<script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
+
+		<![endif]-->
+</body>
+
+</html>

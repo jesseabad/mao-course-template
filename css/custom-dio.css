@@ -1,0 +1,1162 @@
+/*
+Theme Name: OSD-DIO
+Description: custom style sheet for OSD-DIO training website
+Author: Jabad - TLG
+Filename: custom-dio.css
+*
+*
+*/
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #0f1011;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 160%;
+
+}
+
+#wb-bar,
+#wb-bnr,
+header {
+    background: none;
+}
+
+#wb-bnr {
+    height: 46px;
+}
+
+#wb-bar>div>div.row {
+    background-color: black;
+    height: 45px;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+div.row {
+    margin: 0;
+}
+
+main a:link,
+main a:visited {
+    color: #20399D;
+}
+
+/*/
+Global top bar/*/
+
+#wb-bar {
+    background: #0f1011;
+}
+
+#buffylogo {
+    padding-top: 6px;
+    padding-right: 25px;
+}
+
+/*/
+Global Menubar/*/
+
+div.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#menu.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.flex-grow {
+    flex-grow: 1;
+}
+
+#wb-sm {
+    background-color: #0F1011;
+}
+
+#sitemenu.container {
+    background-color: white;
+    padding: 0 15px;
+}
+
+#wb-sm .menu>li>a {
+    color: #041e41;
+    text-shadow: none;
+    font-size: 0.9em;
+}
+
+#wb-sm .menu>li>ul {
+    font-size: 0.85em;
+}
+
+ul#submenu.sm.list-unstyled>li>a {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+/*/
+Slider/*/
+
+.home-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.slider-text {
+    padding: 0.2em 1.5em 1em;
+    color: white;
+    background-color: #041e41;
+}
+
+.slider-text>h1 {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.slider-text>span {
+    font-size: 1.1em;
+
+}
+
+.img-container>img {
+    object-fit: cover;
+}
+
+/*/
+Home main content/*/
+
+.button-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.intro-text-container {
+    padding: 1em 2em 2em;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-text-container>p>a:hover {
+    color: #695616;
+    text-decoration-thickness: 2px;
+}
+
+div.intro-text-container>h2 {
+    color: #0d1d41;
+}
+
+div.intro-text-container>p {
+    font-size: 1.2em;
+    max-width: 800px;
+}
+
+#wb-cont {
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    width: fit-content;
+}
+
+main>.container {
+    background-color: white;
+    margin: 0 auto;
+    padding-bottom: 0;
+    width: fit-content;
+}
+
+main.cs-page {
+    padding-bottom: 0;
+}
+
+.btn-cta>a:hover,
+.landing-container>div a:hover {
+    color: #695616;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+}
+
+/*/
+Footer/*/
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    max-width: 600px;
+    margin: 3em auto;
+    border-top: 1px #ccc solid;
+    padding-top: 2em;
+}
+
+#wb-info>div.container {
+    max-width: 1200px;
+    background-color: white;
+}
+
+ul.footer-nav>li {
+    font-size: 0.9em;
+}
+
+footer a:hover {
+    text-decoration-thickness: 2px;
+}
+
+/*/
+Utilities/*/
+
+.nopad {
+    padding: 0;
+}
+
+.nomar {
+    margin: 0;
+}
+
+.green-font {
+    color: #0F5640;
+    font-weight: bold;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.green {
+    background-color: #0F5640;
+}
+
+.border-green {
+    border: 1px dashed green;
+}
+
+.border-red {
+    border: 1px dashed red;
+}
+
+.border-blue {
+    border: 1px dashed blue;
+}
+
+.border-gray {
+    border: 1px #ccc solid;
+}
+
+.border-no {
+    border: 0 #ccc solid;
+}
+
+.no-outline {
+    outline: 0;
+}
+
+.list-no-bullet {
+    list-style-type: none;
+    line-height: 175%;
+}
+
+.list-with-bullet {
+    list-style-type: disc;
+    line-height: 175%;
+}
+
+.green-text {
+    color: #0F5640
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.transprnt {
+    visibility: hidden;
+}
+
+/*/
+--/*/
+#main-cont {
+    background-color: white;
+
+}
+
+#main>.row {
+
+    padding-bottom: 0;
+}
+
+/*/
+Screenreader/*/
+
+.screenReader>* {
+    color: white;
+}
+
+.screenReader~span {
+    color: white;
+}
+
+.audio-text {
+    color: white;
+}
+
+/*/
+Course Menu/*/
+
+#glossary-menu-button,
+#home-menu-button {
+    color: white;
+}
+
+/*/
+Course body/*/
+
+#css-page {
+    background-color: white;
+
+}
+
+/*/
+======================= CS Landing page =======================/*/
+
+.launch-button {
+    color: white;
+}
+
+.launch-button:hover {
+    background-color: #695616;
+}
+
+
+div.landing-slider {
+    background-color: #041e41;
+    display: flex;
+    justify-content: center;
+}
+
+div.landing-slider-text {
+    padding: 0.2em 1.5em 1em;
+    background-color: transparent;
+    color: white;
+    max-width: 800px;
+    text-align: center;
+}
+
+div.landing-slider-text>h1 {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+div.landing-slider-text>p {
+    font-size: 1em;
+}
+
+/*/
+landing content/*/
+
+div.landing-container {
+    display: flex;
+    flex-direction: row;
+}
+
+div.landing-container>div.icon {
+    margin-right: 2em;
+}
+
+div.landing-container>div>h2,
+div.landing-container>div>div>div>h2 {
+    color: #0F5640;
+    font-size: 24px;
+}
+
+div.divider {
+    border-top: 1px solid #ccc;
+    width: 300px;
+    margin: 1em 0 1.5em;
+}
+
+#section-list {
+    display: flex;
+    flex-flow: column;
+    flex-basis: 100%;
+    flex: 1;
+
+}
+
+#section-list>div {
+    padding: 3px 10px;
+    border: red 0 dashed;
+}
+
+#section-list>div.theading {
+    font-weight: bold;
+    color: #0F5640;
+
+
+}
+
+#section-list>div.tbody {
+    max-width: max-content;
+
+
+}
+
+
+/*/
+Launch button/*/
+
+.launch-button {
+    box-shadow: none;
+    padding: 10px;
+    border: 0;
+    border-radius: 6px;
+    width: 243px;
+
+}
+
+/*/
+Available in Other Format/*/
+div.misc-box {
+    background-color: #ddd;
+    padding: 0;
+    max-width: 290px;
+}
+
+div.misc-box-header {
+    background-color: #0d1d41;
+    padding: 10px 15px;
+    color: white;
+    margin: 0;
+}
+
+div.misc-box-header>h3 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+div.misc-box>#content {
+    padding: 15px;
+}
+
+.button-blue {
+    box-shadow: none;
+    border: 0;
+    padding: 5px;
+    background-color: #0d1d41;
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+}
+
+div.additional-box {
+    max-width: 850px;
+    padding: 0 40px 0 0;
+}
+
+
+/*/
+======================= CS course page =======================/*/
+
+/*/
+header/*/
+
+main.cs-page {
+    background-color: transparent;
+}
+
+div.course-header {
+    background-color: #0F5640;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    padding-top: 25px;
+}
+
+div.course-header h2 {
+    margin: 0 auto 25px;
+    width: max-content;
+}
+
+div.sr-header {
+    margin: 0;
+    text-align: center;
+    font-size: 0.95em;
+    padding-right: 1em;
+    font-weight: 600;
+    color: #fff;
+    display: inline;
+}
+
+div.screenReader {
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-items: center;
+}
+
+div.screenReader>* {
+    flex-grow: 1;
+    flex-basis: 100%;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+div.dividerBox {
+    flex-grow: 1;
+    flex-basis: 100%;
+    height: 0;
+}
+
+.progressBar {
+    vertical-align: middle;
+}
+
+span.audio-text {
+    font-size: 0.5em;
+    text-align: center;
+    padding: 0;
+    border-top: 0;
+}
+
+#jPlayerForReader {
+    position: absolute;
+    left: -100px;
+}
+
+ul.course-top-menu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+ul.course-top-menu>li>a {
+    text-decoration: none;
+    width: auto;
+    display: block;
+    font-size: 24px;
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+}
+
+
+/*/
+Prev & Next Buttons/*/
+
+.pager>button {
+    color: #0F5640;
+    margin-left: 20px;
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+.prevBtn::before {
+    font-family: "Glyphicons Halflings";
+    content: "\e091";
+    margin-right: 0.5em;
+}
+
+.nextBtn::after {
+    font-family: "Glyphicons Halflings";
+    content: "\e092";
+    margin-left: 0.5em;
+}
+
+
+/*/
+===================== Course Sections Menu / Left Menu ===========================/*/
+
+#course-menu {
+    background-color: #ccc;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#course-menu>li {
+    list-style-type: none;
+}
+
+#course-menu>li>details {
+    margin: 0;
+    padding: 0;
+}
+
+#course-menu>li>details[open]>summary,
+#course-menu>li>details[open]>summary:hover {
+    background-color: #0F5640;
+    color: white;
+    text-decoration-thickness: 2px;
+
+}
+
+#course-menu>li>details>summary {
+    color: black;
+    margin: 0;
+    text-decoration: underline;
+}
+
+#course-menu>li>details>summary:hover {
+    background-color: #333;
+    color: white;
+
+}
+
+#course-menu>li>details>summary a:link,
+#course-menu>li>details>summary a:visited {
+    color: black;
+
+}
+
+#course-menu>li>details>a {
+    display: flex;
+    justify-items: right;
+    align-items: flex-start;
+}
+
+#course-menu>li>details>a[aria-selected='true'] {
+    background-color: #666;
+    color: white;
+}
+
+#course-menu>li>details>a>span {
+    margin-left: auto;
+    order: 2;
+}
+
+.list-group-item:hover {
+    text-decoration: underline;
+}
+
+main.cs-page a:link:not(a.terms),
+main.cs-page a:visited {
+    color: black;
+
+}
+
+
+/*/
+Glyphicon check/*/
+
+.glyphicon-ok {
+    color: #0F5640;
+    float: right;
+    border: 2px solid #0F5640;
+    border-radius: 30px;
+    padding: 3px;
+    font-size: 12px;
+}
+
+#course-menu>li>details>a[aria-selected='true']>span.glyphicon-ok {
+    color: white;
+    border: 1px white solid;
+}
+
+/*/
+Focus/*/
+
+#main-cont>section>h1:focus {
+    outline: 0;
+}
+
+summary.section-menu:focus {
+    border: 2px #20399D solid;
+}
+
+/*/
+overirdes/*/
+header.modal-header {
+    background-color: #0F5640;
+}
+
+/*/
+====================== Glossary styling ======================/*/
+
+section#right-panel {
+    overflow-y: auto;
+    height: 100%;
+}
+
+
+.glossary {
+    max-width: 50rem;
+}
+
+a#glossary-menu-button {
+    color: white;
+    text-decoration: none;
+
+}
+
+.glossary ul li {
+    list-style: none;
+    margin-left: -30px;
+}
+
+.glossary ul li ul li {
+    list-style: disc;
+    margin-left: 0;
+}
+
+.glossary ul li ul li:before {
+    content: "";
+}
+
+.glossary a:link,
+.glossary a:visited {
+    text-decoration: underline;
+}
+
+.glossary a:hover {
+    text-decoration-thickness: 2px;
+}
+
+.overlay-def header,
+.overlay-close {
+    background-color: #0d1d41;
+}
+
+
+.overlay-close:hover {
+    background-color: #0d1d41;
+}
+
+#main-cont>section>ul>li>div>p>a.terms,
+#main-cont>section>p>a.terms:link,
+#main-cont>section>p>a.terms:visited {
+    position: relative;
+    font-weight: bold;
+    color: #0F5640;
+    text-decoration-style: dotted;
+}
+
+#main-cont>section>ul>li>div>p>a.terms:hover,
+#main-cont>section>p>a.terms:hover,
+#main-cont>section>ul>li>div>p>a.terms:hover {
+    text-decoration-thickness: 2px;
+    text-decoration-style: solid;
+}
+
+.term-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.term-title:first-letter {
+    text-transform: capitalize;
+}
+
+.bubble>ul>li {
+    padding-bottom: 0;
+    list-style-type: disc;
+}
+
+.bubble>ul>li:before {
+    content: ""
+}
+
+#barriers a,
+#undue-hardship a {
+    color: white;
+}
+
+#barriers a:hover,
+#undue-hardship a:hover {
+    text-decoration-thickness: 2px;
+}
+
+
+/*/
+======================== Check My Answer button =======================/*/
+
+a#check-my-answer.overlay-lnk img {
+    width: 14rem;
+}
+
+a#something-to-consider.overlay-lnk img {
+    width: 18rem;
+}
+
+
+/*/
+======================== Media =======================/*/
+
+.media,
+.media-body {
+    overflow: visible;
+}
+
+
+/*/
+======================= Tooltip:manual version =======================/*/
+
+.bubble {
+    border-radius: 10px;
+    border: #0F5640 1px solid;
+    height: fit-content;
+    width: 400px;
+    background-color: #0F5640;
+    color: #fff;
+    font-size: 1em;
+    font-weight: normal;
+    padding: 1.5em;
+    opacity: 1;
+    cursor: default;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1000;
+}
+
+.bubble-close-btn {
+    z-index: 1000;
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    cursor: pointer;
+    background-color: #0F5640;
+    width: 25px;
+    height: 25px;
+    border-top-right-radius: 8px;
+    border: none;
+}
+
+.bubble-close-btn:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e083";
+    font-size: 20px;
+    color: #fff;
+    border: none;
+}
+
+span.bubble.no-outline>a {
+    color: white;
+}
+
+span.bubble.no-outline>a:hover {
+    text-decoration-thickness: 2px;
+}
+
+/*/
+================================== Customer Service:Knowledge Check ==================================/*/
+
+.feedback {
+    display: none;
+    padding: 30px;
+}
+
+section h1 {
+    margin-top: 15px;
+}
+
+
+section #no-answer {
+
+    max-width: 600px;
+    height: fit-content;
+}
+
+li.custom-bullet-alert::marker {
+    font-family: 'Glyphicons Halflings';
+    content: "\e101";
+    font-size: 15px;
+    float: left;
+    color: #C1065a;
+}
+
+li.custom-bullet-alert {
+    padding-left: 15px;
+}
+
+
+div.radio>label:before {
+    content: "";
+}
+
+div.radio>label>span {
+    margin-left: 10px;
+    display: inline-flex;
+}
+
+
+.radio>label>input[type="radio"] {
+    position: static;
+    transform: scale(1.3);
+}
+
+
+.cma-button {
+    padding: 6px 12px;
+    background-color: #444;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    font-size: 1em;
+
+}
+
+
+/*/
+================================== Customer Service:Main content ==================================/*/
+
+main#main-cont>section {
+    padding-top: 15px;
+}
+
+/*/
+Video/*/
+
+video {
+    border: 1px #ccc solid;
+    width: 100%;
+    height: auto;
+}
+
+#main-cont>section>p>a[link='rel'],
+#main-cont>section>ol>li>a[link='rel'],
+#main-cont>section>ul>li>div>ol>li>a[link='rel'],
+#main-cont>section>ul>li>div>p>strong>a[link='rel'],
+#main-cont>section>div>details>div>p>a[link='rel'],
+#congrats-box>p>a,
+#adtnl-resources.media-body>ul>li>a {
+    font-weight: normal;
+    text-decoration: underline;
+    color: black;
+}
+
+#main-cont>section>p>a[link='rel']:hover,
+#main-cont>section>ol>li>a[link='rel']:hover,
+#main-cont>section>ul>li>div>ol>li>a[link='rel']:hover,
+#main-cont>section>ul>li>div>p>strong>a[link='rel']:hover,
+#main-cont>section>div>details>div>p>a[link='rel']:hover,
+#congrats-box>p>a:hover,
+#adtnl-resources.media-body a:hover {
+    text-decoration-thickness: 2px;
+}
+
+#adtnl-resources>ul {
+    list-style-type: disc;
+}
+
+#adtnl-resources>ul>li,
+#adtnl-resources>ul>ul>li {
+    padding-left: 10px;
+}
+
+#adtnl-resources>ul>ul {
+    list-style-type: square;
+}
+
+/*/
+================================== Customer Service:Knowledge Check ==================================/*/
+
+.feedback {
+    display: none;
+    padding: 30px;
+
+}
+
+section h1 {
+    margin-top: 15px;
+}
+
+section.modal-content {
+    position: fixed;
+    top: 0;
+    height: max-content;
+    max-width: 700px;
+}
+
+/*
+section #no-answer {
+    width: 30%;
+    height: fit-content;
+}
+
+
+section #no-answer>div.modal-body,
+section#reminder>div.modal-body {
+    padding-top: 30px;
+}
+
+#no-answer>div.modal-body>ul>li>span {
+    position: absolute;
+    top: 16px;
+}
+*/
+
+li.custom-bullet-alert::marker {
+    font-family: 'Glyphicons Halflings';
+    content: "\e101";
+    font-size: 30px;
+    color: #C1065a;
+
+}
+
+li.custom-bullet-alert>span {
+    display: inline-flex;
+    position: absolute;
+    top: 31px;
+
+}
+
+
+.modal-content {
+    box-shadow: 0 0 25px #333;
+}
+
+/*/
+====================================== Course menu on hamburger ======================================/*/
+
+
+.sec-pnl>ul#course-menu {
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: transparent;
+    border-bottom: 0;
+}
+
+.sec-pnl>ul>li {
+    border-top: #0d1d41 solid 1px;
+}
+
+.sec-pnl>#course-menu>li>details>a {
+    margin: 0 auto;
+    padding: 2px 15px;
+}
+
+#mb-pnl {
+    width: 400px;
+    background-color: #0F5640;
+}
+
+
+#wb-sec {
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+#sec-pnl .section-menu {
+    border-radius: 0;
+    padding-left: 20px;
+}
+
+
+/*/
+====== Resume course dialog ======/*/
+
+.resumeDialogBox {
+    position: fixed;
+    z-index: 3000;
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button[aria-label='Resume'] {
+    font-size: 18px;
+    border-radius: 30px;
+    width: 170px;
+    height: 60px;
+}
+
+button[aria-label='Resume']:before {
+    font-family: "Glyphicons Halflings";
+    content: "\e072";
+    margin-right: 10px;
+    vertical-align: -8%
+}
+
+button[aria-label='Restart'] {
+    border: 0px red dashed;
+    height: 30px;
+    width: 100px;
+    align-self: flex-end;
+    position: absolute;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+}
+
+button[aria-label='Restart']:before {
+    font-family: "Glyphicons Halflings";
+    content: "\e031";
+    margin-right: 20px;
+    vertical-align: -12%;
+
+}
+
+
+/*/
+Harmburger Menu - Green theme - Start
+* 
+*
+*/
+
+section.acs-theme #mb-pnl,
+section.acs-theme #mb-pnl .modal-header,
+section.acs-theme #mb-pnl .modal-body,
+section.acs-theme #mb-pnl .modal-footer {
+    background-color: #0F5640;
+}
+
+section.acs-theme #mb-pnl>div.modal-body>ul>li>details>summary {
+    color: #0F5640;
+}
+
+section.acs-theme #mb-pnl #course-menu details>a,
+section.acs-theme #mb-pnl #course-menu details>summary[aria-selected="false"] {
+    color: #0F5640;
+}
+
+section.acs-theme #mb-pnl #course-menu details>summary:hover {
+    background-color: #0c4231;
+    color: white;
+}
+
+section.acs-theme #mb-pnl .modal-footer button {
+    background-color: #0a3628;
+    border: 1px solid #0a3628;
+}
+
+
+/*
+Harmburger Menu - Green theme -End
+*/
