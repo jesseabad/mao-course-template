@@ -100,6 +100,7 @@ jQuery(document).ready(function ($) {
 	})
 	loadGlossarySection();
 	addSecMenuToHamburger();
+	reloadJsOnAjax();
 	//getStringQuery();
 	//showResumeOptions()
 })
@@ -645,3 +646,5 @@ function updateChangeLangUrl() {
 		selector.attr("href", href);
 	})
 }
+
+
