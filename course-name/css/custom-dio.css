@@ -464,14 +464,14 @@ div.misc-box>#content {
     padding: 15px;
 }
 
-.button-blue {
+div.misc-box>#content>.button-blue {
     box-shadow: none;
     border: 0;
     padding: 5px;
     background-color: #0d1d41;
     border-radius: 5px;
     color: white;
-    width: 150px;
+    width: 95%;
 }
 
 div.additional-box {
