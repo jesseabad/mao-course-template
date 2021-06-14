@@ -25,6 +25,7 @@
 @media screen and (max-width: 992px) {
     #buffylogo {
         padding-left: 25px;
+
     }
 
     #section-list>div.tbody {
@@ -51,15 +52,17 @@
         display: none;
     }
 
-    .visible-sm {
-        display: block !important;
-    }
+
 
 }
 
 @media screen and (max-width:1200px) {
     div.course-header>div>h2 {
         width: 320px;
+    }
+
+    #buffylogo {
+        padding-left: 25px;
     }
 }
 
@@ -181,6 +184,7 @@ media query minimum
         width: 30%;
     }
 
+
 }
 
 
@@ -188,7 +192,6 @@ media query minimum
     #wb-cont>div>div {
         min-width: 968px;
     }
-
 }
 
 
@@ -205,6 +208,8 @@ media query minimum
     #wb-cont>div>div {
         min-width: 1170px;
     }
+
+
 
 }
 
