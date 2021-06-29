@@ -100,7 +100,7 @@ jQuery(document).ready(function ($) {
 	})
 	loadGlossarySection();
 	addSecMenuToHamburger();
-	reloadJsOnAjax();
+	//reloadJsOnAjax();
 	//getStringQuery();
 	//showResumeOptions()
 })
@@ -587,8 +587,6 @@ function getStringQuery() {
 
 		//console.log($(selector));
 	}
-
-
 }
 
 function setQueryString() {
@@ -637,13 +635,22 @@ function initToggleMedia() {
 }
 
 function updateChangeLangUrl() {
+
 	$("#main-cont").ready(function () {
-		let selector = $(".footer-nav>li:nth-child(2)>a");
-		let url = selector.attr("href").split("?")[0];
-		let index = $("#navData").data("index");
-		let href = url + "?page=" + index;
+		var selector = $(".footer-nav>li:nth-child(2)>a");
+		var index = $("#navData").data("index");
+
+		if ($(".footer-nav>li:nth-child(2)>a").attr("href").indexOf("?") > -1) {
+			var url = selector.attr("href").split("?")[0];
+		} else {
+			var url = selector.attr("href");
+		}
+
+		
+		var href = url + "?page=" + index;
 		selector.attr("href", "");
 		selector.attr("href", href);
+		console.log("updateChangeLang")
 	})
 }
 
